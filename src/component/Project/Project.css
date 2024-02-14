@@ -1,0 +1,80 @@
+#project{
+    
+    margin: 0 auto;
+    /* min-height:  calc(100vh - 4rem); */
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.projectTitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+.projectP{
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+.projectDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 65rem;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+.projectt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 45rem;
+    background: rgb(50, 50, 50);
+}
+.projectt:hover {
+    transform: scale(1.08);
+}
+.projectImg{
+    object-fit: cover;
+    height: 10rem;
+    margin: 1rem;
+}
+.projectB{
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width:585px) {
+    .projectImg{
+        height: 20vw;
+    }
+    .projectt {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        padding: auto;  
+    }
+    .projectDiv{
+        max-width: 45rem;
+        flex-wrap: wrap;
+        margin-left: 5.125rem;
+        padding: 1.0rem 1.0rem;
+    }
+}

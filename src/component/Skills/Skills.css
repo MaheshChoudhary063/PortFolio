@@ -1,0 +1,132 @@
+/* #skill{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.SkillTittle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.SkillPar{
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.skillBar{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+
+} */
+
+/* .bar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50,50,50);
+    
+} */
+
+/* .Skillimg{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+
+} */
+/* .Skilltext{
+    font-size: 0.9rem;
+    font-weight: 200;
+} */
+
+#skill {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.SkillTittle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.SkillPar {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.skillBar {
+    margin: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.bar {
+    flex: 0 0 calc(33.333% - 2rem);
+    /* flex: 0 0 calc(50% - 2rem); */
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+.bar:hover {
+    transform: scale(1.08);
+}
+
+.Skillimg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.Skilltext {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .bar {
+        flex: 0 0 calc(50% - 2rem); 
+    }
+    .Skilltext{
+        font-size: 2vw;
+    }
+}@media screen and (max-width: 480px) {
+ 
+    .bar {
+        flex: 0 0 calc(50% - 1rem); 
+    }
+    .Skilltext{
+        font-size: 5vw;
+    }
+  
+}
