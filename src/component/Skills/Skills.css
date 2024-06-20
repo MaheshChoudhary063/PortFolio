@@ -52,7 +52,7 @@
     font-size: 0.9rem;
     font-weight: 200;
 } */
-
+/* 
 #skill {
     overflow: hidden;
     width: 100vw;
@@ -89,7 +89,6 @@
 
 .bar {
     flex: 0 0 calc(33.333% - 2rem);
-    /* flex: 0 0 calc(50% - 2rem); */
     display: flex;
     margin: 1rem;
     padding: 1.5rem 2rem;
@@ -129,4 +128,91 @@
         font-size: 5vw;
     }
   
+} */
+
+#skill {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.SkillTittle {
+    font-size: clamp(1.5rem, 3vw, 3rem); /* Responsive font size */
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.SkillPar {
+    font-weight: 400;
+    font-size: clamp(0.8rem, 1.5vw, 1rem); /* Responsive font size */
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.skillBar {
+    margin: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+.bar {
+    flex: 1 1 calc(33.333% - 2rem); /* Three items per row */
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.bar:hover {
+    transform: scale(1.08); /* Slightly enlarge on hover */
+}
+
+.Skillimg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.Skilltext {
+    font-size: clamp(0.7rem, 1.2vw, 0.9rem); /* Responsive font size */
+    font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+    .skillBar {
+        justify-content: center;
+    }
+
+    .bar {
+        flex: 1 1 calc(50% - 2rem); /* Two items per row */
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bar {
+        flex: 1 1 calc(100% - 2rem); /* One item per row */
+        margin: 2rem;
+        padding: 1rem 1rem ; 
+    }
+
+    .Skilltext {
+        font-size: clamp(2vw, 3vw, 5vw); /* Responsive font size */
+    }
 }

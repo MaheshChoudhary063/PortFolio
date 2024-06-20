@@ -1,92 +1,89 @@
-.navbar{
-    /* background: rgb(50,50,50); */
+.navbar-container {
+  width: 100vw;
+}
+
+.navbar {
+  height: 5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.menuList {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.menuList:hover {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid white;
+}
+
+.menuButton {
+  background: white;
+  color: black;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
+
+.active {
+  color: white;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid white;
+}
+
+.mob1 {
+  color: white;
+  display: none;
+  object-fit: cover;
+  height: 10rem;
+}
+
+.Mobmenu1 {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+.mobmenuList {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+}
+
+@media screen and (max-width: 720px) {
+  .mob1 {
+    color: rgb(255, 255, 255);
+    display: flex;
     height: 5rem;
-    /* width: 100%; */
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.7rem;
+  }
+  .Mobmenu1 {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    
-    /* position: fixed; */
-    top: 0;
-    z-index: 3;
-}
-
-.menuList{
-    margin: 1rem;
-    cursor: pointer;
-}
-
-.menuList:hover{
-    /* color: white; */
-    padding-bottom:0.5rem ;
-    border-bottom: 3px solid white;
-}
-
-.menuButton{
-    background:white;
-    color: black;
-    border: none;
-    align-items: center;
-    justify-content: center;
-    padding: 0 2rem;
-    border-radius: 2rem;
-    font-size: 1.2rem;  
-}
-
-.active{
-    color: white;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid white;
-}
-.mob1{
-    color: white;
+  }
+  .menu {
     display: none;
-    object-fit: cover;
-    height: 10rem;
-    /* background-color: blue; */
-}
-.Mobmenu1{
-    position: absolute;
-    top:4rem;
-    right:2rem;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    height: fit-content;
-    min-width: 15rem;
-    background: rgb(40,40,40);
-    border-radius: 1rem;
-}
-.mobmenuList{
-    color: white;
-    padding: 0.5rem 3rem;
-    margin: 0.25rem;
-    background: rgb(30,30,30);
-}
-
-@media screen and (max-width:720px) {
-    .mob1{
-        color: rgb(255, 255, 255);
-        display: flex;
-        /* background-color: blue; */
-        height: 5rem;
-        padding: 0.7rem;
-        /* margin-left: 2rem; */
-    }
-    .Mobmenu1 {
-        display: flex;
-        
-    }
-    .menu{
-        display: none;
-    }
-    .menuButton{
-        display: none;
-    }
+  }
+  .menuButton {
+    display: none;
+  }
 }

@@ -1,4 +1,4 @@
-#contact{
+/* #contact{
     margin: 0 auto;
     min-height:  calc(100vh - 4rem);
     width: 100vw;
@@ -14,7 +14,6 @@
     margin:  0;
     font-size: 3rem;
     font-weight: 600;
-    /* padding-top: 3rem; */
     margin-bottom: 1.5rem;
 }
 .contactForm{
@@ -58,4 +57,89 @@
     height: 3rem;
     width: 3rem;
     margin: 0 0.75rem;
+} */
+
+
+#contact {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactTitle {
+    margin: 0;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    /* Responsive font size */
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 40rem;
+}
+
+.Conname,
+.Conemail,
+.ConNo,
+.msg {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    /* Responsive font size */
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+}
+
+.ConSubBut {
+    background: white;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    /* Responsive font size */
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links img:hover {
+    transform: translateY(-10px);
+}
+
+.link {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    .Conname,
+    .Conemail,
+    .ConNo,
+    .msg,
+    .ConSubBut {
+        font-size: clamp(0.7rem, 1.5vw, 1rem);
+        /* Responsive font size */
+    }
 }

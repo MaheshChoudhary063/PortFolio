@@ -39,24 +39,28 @@ const Contact = () => {
           className="Conname"
           placeholder="Your Name"
           name="your_name"
+          required
         />
         <input
           type="email"
           className="Conemail"
           placeholder="Enter Your Email"
           name="your_email"
+          required
         />
         <input
           type="number"
           className="ConNo"
           placeholder="Enter Your Phone No."
           name="your_number"
+          required
         />
         <textarea
           className="msg"
           name="message"
           rows="5"
           placeholder="Your Message"
+          required
         ></textarea>
         <button type="submit" value="send" className="ConSubBut">
           Submit

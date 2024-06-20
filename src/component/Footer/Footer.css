@@ -1,4 +1,4 @@
-.footer{
+/* .footer{
     height: 4rem;
     width: 100vw;
     max-width: 75rem;
@@ -11,6 +11,23 @@
     font-size: small;
     bottom: 0;
     z-index: 3;
-    /* background: rgb(40,40,40); */
     
+    
+} */
+
+
+.footer {
+    height: 4rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    /* Responsive font size */
+    bottom: 0;
+    z-index: 3;
 }

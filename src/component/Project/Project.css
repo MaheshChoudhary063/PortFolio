@@ -1,7 +1,6 @@
-#project{
+/* #project{
     
     margin: 0 auto;
-    /* min-height:  calc(100vh - 4rem); */
     width: 100vw;
     max-width: 65rem;
     display: flex;
@@ -76,5 +75,123 @@
         flex-wrap: wrap;
         margin-left: 5.125rem;
         padding: 1.0rem 1.0rem;
+    }
+} */
+
+#project {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.projectTitle {
+    margin: 1rem 0;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    /* Responsive font size */
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.projectP {
+    font-weight: 400;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    /* Responsive font size */
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.projectDiv {
+    display: flex;
+    flex-wrap: wrap;
+    /* Enable wrapping */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 65rem;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
+}
+
+.projectt {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: calc(33.333% - 2rem);
+    /* Three items per row with margin */
+    background: rgb(50, 50, 50);
+    transition: transform 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.projectt:hover {
+    transform: scale(1.08);
+    /* Slightly enlarge on hover */
+}
+
+.projectImg {
+    object-fit: cover;
+    height: 10rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.projectB {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    /* Responsive font size */
+}
+
+@media screen and (max-width: 768px) {
+    .projectt {
+        width: calc(50% - 2rem);
+        /* Two items per row with margin */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projectDiv {
+        flex: 1 1 calc(100% - 2rem);
+        /* Full width minus 2rem for spacing */
+        padding: 1rem 1rem;
+        margin: 2rem auto;
+        /* Centered margin of 2rem */
+    }
+
+    .projectt {
+        width: calc(100% - 2rem);
+        /* Full width minus 2rem for spacing */
+        margin: 1rem;
+        padding: 1rem 1rem;
+        /* Uniform padding for smaller screens */
+    }
+
+    .projectImg {
+        height: 10rem;
+        /* Set fixed height for images */
+    }
+
+    .projectB {
+        padding: 0.5rem 1rem;
+        /* Reduced padding for smaller screens */
+        font-size: clamp(0.7rem, 1vw, 0.9rem);
+        /* Adjusted font size for responsiveness */
     }
 }
