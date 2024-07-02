@@ -25,5 +25,5 @@ This portfolio is a personal project built using React.js. It showcases my skill
 ## Installation
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/MaheshChoudhary063/PortFolio.git
 
