@@ -4,7 +4,8 @@
 This portfolio is a personal project built using React.js. It showcases my skills, projects, and experience. The portfolio is designed to be visually appealing and responsive, ensuring a seamless user experience across all devices.
 
 
-https://github.com/MaheshChoudhary063/PortFolio/assets/119046042/ce85c189-e745-4e17-80e5-d3986e95a9f7
+https://github.com/MaheshChoudhary063/PortFolio/assets/119046042/78823191-551a-4900-9de4-311a5f7b1715
+
 
 
 ## Features
