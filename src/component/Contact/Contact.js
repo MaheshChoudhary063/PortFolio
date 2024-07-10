@@ -77,7 +77,7 @@ const Contact = () => {
 
           {/* <img src={linkdin} alt="linkdin" className="link" /> */}
           <a
-            href="https://www.linkedin.com/in/mahesh-choudhary-2aa138243/"
+            href="https://www.linkedin.com/in/maheshchaudhary63/"
             target="_blank"
             rel="noopener noreferrer"
           >
