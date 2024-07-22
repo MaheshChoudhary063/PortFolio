@@ -78,7 +78,7 @@ const Home = () => {
           applications <br /> tailored to meet client requirements
         </p>
         <a
-          href="https://drive.google.com/file/d/1r-ItzufFyHWMiSkGvulozNcUSrtjP7DT/view"
+          href="https://drive.google.com/file/d/18jGkW96CyqVCdS4b4HqYBGVB6eG15yXt/view"
           target="_blank"
           rel="noopener noreferrer"
         >

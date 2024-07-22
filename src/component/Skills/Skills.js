@@ -94,7 +94,7 @@ const Skills = () => {
                     <div className='bar'>
                     <img src={dEVOPS} alt='photo' className='Skillimg'/>
                     <div className='Skilltext'>
-                        <h2>DevOps</h2>
+                        <h2>Docker</h2>
                     </div>
                     </div>
                 </div>

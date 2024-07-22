@@ -77,16 +77,18 @@
         padding: 1.0rem 1.0rem;
     }
 } */
-
 #project {
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
     max-width: 65rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 50px 20px;
+    /* Added padding for left and right */
+    color: #e5e5e5;
 }
 
 .projectTitle {
@@ -115,9 +117,12 @@
     width: 100%;
     max-width: 65rem;
     margin: 1rem;
-    padding: 1.5rem 3rem;
-    border-radius: 0.5rem;
-    background: rgb(50, 50, 50);
+    padding: 20px;
+    /* Unified padding */
+    border-radius: 8px;
+    /* Consistent border-radius */
+    background-color: #444;
+    /* Consistent background color */
     box-sizing: border-box;
     /* Ensure padding and border are included in the element's total width and height */
 }
@@ -129,10 +134,14 @@
     align-items: center;
     justify-content: center;
     margin: 1rem;
-    padding: 1.5rem;
+    padding: 20px;
+    /* Unified padding */
     width: calc(33.333% - 2rem);
     /* Three items per row with margin */
-    background: rgb(50, 50, 50);
+    background-color: rgb(50, 50, 50);
+    /* Consistent background color */
+    border-radius: 8px;
+    /* Consistent border-radius */
     transition: transform 0.3s ease;
     /* Smooth hover effect */
 }
@@ -147,6 +156,8 @@
     height: 10rem;
     width: 100%;
     margin-bottom: 1rem;
+    border-radius: 8px;
+    /* Consistent border-radius */
 }
 
 .projectB {
@@ -170,7 +181,8 @@
     .projectDiv {
         flex: 1 1 calc(100% - 2rem);
         /* Full width minus 2rem for spacing */
-        padding: 1rem 1rem;
+        padding: 1rem;
+        /* Reduced padding */
         margin: 2rem auto;
         /* Centered margin of 2rem */
     }
@@ -179,7 +191,7 @@
         width: calc(100% - 2rem);
         /* Full width minus 2rem for spacing */
         margin: 1rem;
-        padding: 1rem 1rem;
+        padding: 1rem;
         /* Uniform padding for smaller screens */
     }
 
