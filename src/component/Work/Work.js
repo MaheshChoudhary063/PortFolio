@@ -15,7 +15,7 @@ function Work() {
         <div className="job">
           <h3>Software Developer Intern</h3>
           <h4>BitWit Techno, Ahmedabad</h4>
-          <p>📅 May, 2024 - Present</p>
+          <p>📅 May, 2024 - Sep, 2024</p>
           <ul>
             <li>
               Working ,on real-world projects involving Firebase for backend
